@@ -11,9 +11,9 @@ const sonuc = document.getElementById("sonuc");
 const aramaListesi = document.getElementById("aramaListesi");
 const aramaKutusu = document.getElementById("aramaKutusu");
 
-
+//Bu kısmı değiştirdim
 // JSON kaynağından aldığımız verileri sayfada tutmak için dizi değişkenleri oluşturalım.
-const anahtarKelimeler = [];
+const keyWords = [];
 const deyimlerSozler = [];
 
 
@@ -26,14 +26,14 @@ async function verileriYukle(){
     console.log(veriler);
 
     veriler.forEach(eleman => { 
-        anahtarKelimeler.push(eleman.anahtar);
+        keyWords.push(eleman.anahtar);
         deyimlerSozler.push(eleman.sozum);
     });
-    //console.log("Anahtar kelimeler: ",anahtarKelimeler);
+    //console.log("Anahtar kelimeler: ",keyWords);
 
 
     // bazı kelimeler birden fazla tekrar ettiği için teke düşürelim
-    const birlesmisKelimeler = [...new Set(anahtarKelimeler)];
+    const birlesmisKelimeler = [...new Set(keyWords)];
     console.log("birlesmis kelimeler: ",birlesmisKelimeler);
 
 
