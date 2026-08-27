@@ -21,7 +21,7 @@ const deyimlerSozler = [];
 verileriYukle();
 
 async function verileriYukle(){
-    const response = await fetch("https://sozluk.gov.tr/atasozu"); // await sarı ışık anlamına gelir. Bekletmek için
+    const response = await fetch("https://sozluk.gov.tr/atasozu"); 
     let veriler = await response.json();
     console.log(veriler);
 
@@ -66,6 +66,7 @@ async function verileriYukle(){
             const siradakiSonuc = document.createElement("li");
             sonuc.appendChild(siradakiSonuc);
             siradakiSonuc.innerHTML = es;
+            yanlış kod gönderdim
         })
 
     }
