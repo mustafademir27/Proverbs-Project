@@ -55,6 +55,10 @@ async function verileriYukle(){
     // inputun value'sini alalım
     aramaKutusu.addEventListener("input",(e) => sonuclariFiltrele(e.target.value));
 
+    if(1) {
+        retur;
+    }
+
     function sonuclariFiltrele(arananKelime){
         sonuc.innerHTML = "";
         const aramaKriteri = new RegExp(arananKelime,'gi');
